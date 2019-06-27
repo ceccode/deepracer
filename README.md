@@ -30,12 +30,12 @@ def reward_function(params) :
 | heading              | (float) vehicle's yaw in degrees |
 | progress             | (float) percentage of track completed |
 | steps                | (int) numbers of steps completed |
-| steering             | (float) -1 to 1 (-1 is right, 1 is left)                                            | speed                | (float) vehicle's speed in meters per second (m/s) |
+| steering             | (float) -1 to 1 (-1 is right, 1 is left)
+| speed                | (float) vehicle's speed in meters per second (m/s) |
 | steering_angle       | (float) vehicle's steering angle in degrees |
 | track_width          | (float) width of the track |
 | waypoints            | [[float, float] … ] list of [x,y] as milestones along the track center |
 | closest_waypoints    | [int, int] indices of the two nearest waypoints |
-
 
 ### Reward function
 
@@ -47,9 +47,23 @@ A copy-and-paste from Amazon AWS of the sample reward function; used for learnin
 
 ### Punisher
 
-A first attempt to build an easiest reward function to train my model.
+A first attempt to build a "punisher" reward function to train my model.
 
 * [punisher](./reward_functions/punisher.py)
+
+>Top ten classified in AWS Deepracer leage, in Turin.
+
+### Go and Forget
+
+An attempt to build an easiest reward function to train my model.
+
+* [go-and-forget](./reward_functions/goandforget.py)
+
+### Birra moretti
+
+A total failure.
+
+* [birramoretti](./reward_functions/birramoretti.py)
 
 
 ## Utils
